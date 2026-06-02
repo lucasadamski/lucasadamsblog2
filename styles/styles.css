@@ -2,10 +2,30 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr 1fr;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .logo {
     column-span: 4;
+}
+
+.gr-span4-col {
+    grid-column: span 4;
+}
+
+.gr-1-col {
+    grid-column: 1;
+}
+
+.gr-2-col {
+    grid-column: 2;
+}
+
+.gr-3-col {
+    grid-column: 3;
+}
+
+.gr-4-col {
+    grid-column: 4;
 }
 
