@@ -29,3 +29,14 @@
     grid-column: 4;
 }
 
+.gr-ctr {
+    place-self: center;
+}
+
+.gr-rgt {
+    justify-self: end;
+}
+.gr-lft {
+    justify-self: start;
+}
+
