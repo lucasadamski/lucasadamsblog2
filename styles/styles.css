@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Broadway";
+  src: url("/fonts/broadway_cyr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+    font-family: "Broadway";
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
