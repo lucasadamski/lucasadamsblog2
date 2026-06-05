@@ -11,13 +11,24 @@ h1 {
     letter-spacing: 2px;
 }
 
+p {
+    font-family: "Cambria";
+    text-align: justify;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr 1fr;
-    gap: 5rem;
+    align-items: center;
+
+    gap: 4rem;
     max-width: 1300px;
     margin: 0 auto;
+}
+
+.main-container > :first-child {
+    height: 100px;
 }
 
 .logo {
@@ -55,3 +66,31 @@ h1 {
     justify-self: start;
 }
 
+.menu-item {
+    font-family: "Cambria";
+    font-size: 31px;
+}
+
+.menu-active {
+    text-decoration: underline;
+}
+
+img {
+    height: 300px;
+}
+
+
+
+@media screen and (min-width: 10px) and (max-width: 767px) {
+    .main-container {
+        gap: 1rem;
+    }
+    
+    .menu-item {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
