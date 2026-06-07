@@ -114,16 +114,31 @@ img {
 
 @media screen and (min-width: 10px) and (max-width: 767px) {
     .main-container {
+        padding-top: 100px;
         gap: 1rem;
+    }
+    .menu-item {
+        display: none;
     }
     
     .menu-icon {
         display: block;
     }
  
+    .logo {
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo h1 {
+        padding-top: 25px;
+    }
 
     h1 {
-        font-size: 36px;
+        font-size: 22px;
     }
 
     .menu-list {
@@ -132,10 +147,10 @@ img {
         border-radius: 2%;
         display: block;
         position: fixed;
-        top: 170px;
+        top: 120px;
         left: -450px;
         width: 150px;
-        height: 400px;
+        height: 300px;
         transition: left 0.3s ease;
         padding-right: 40px;
         padding-top: 0px;
