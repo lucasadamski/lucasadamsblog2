@@ -117,9 +117,10 @@ img {
         gap: 1rem;
     }
     
-    .menu-item {
-        display: none;
+    .menu-icon {
+        display: block;
     }
+ 
 
     h1 {
         font-size: 36px;
