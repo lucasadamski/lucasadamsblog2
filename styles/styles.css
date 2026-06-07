@@ -20,6 +20,10 @@
     top: 20px;
 }
 
+.menu-list { 
+    display: none;
+}
+
 .menu-icon:hover {
     cursor: pointer;
     background-color: rgba(170, 160, 150, 0.3);
@@ -117,6 +121,13 @@ img {
         padding-top: 100px;
         gap: 1rem;
     }
+
+    .gr-2-col {
+        grid-column: span 4;
+        align-self: center;
+        place-self: center;
+    }
+
     .menu-item {
         display: none;
     }
