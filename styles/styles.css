@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+.paragraph {
+    border: 1px solid grey;
+    border-radius: 10%;
+    padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(135, 157, 152, 0.16);
+    box-shadow: 1px 1px 5px;
+}
+
 .menu-icon {
     width: 30px;
     height: 30px;
@@ -30,7 +39,12 @@
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: 0.2s;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+}
+
+img {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    border-radius: 5%;
 }
 
 
@@ -46,7 +60,10 @@ h1 {
     font-family: "Broadway";
     font-size: 65px;
     letter-spacing: 2px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
 }
+
+
 
 p {
     font-family: "Cambria";
@@ -106,6 +123,7 @@ p {
 .menu-item {
     font-family: "Cambria";
     font-size: 31px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
 }
 
 .menu-active {
