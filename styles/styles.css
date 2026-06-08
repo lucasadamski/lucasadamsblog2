@@ -6,31 +6,33 @@
 }
 
 .menu-icon {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     display: block;
     
     display: none;
-    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.5));
     border: 1px solid white;
-    background-color: rgba(104,85,66,0.5);
+    background-color: black;
+
+    border-radius: 20%;
 
     position: fixed;
     left: 20px;
-    top: 20px;
+    top: 40px;
 }
 
 .menu-list { 
     display: none;
+    list-style: none;
 }
 
 .menu-icon:hover {
     cursor: pointer;
-    background-color: rgba(170, 160, 150, 0.3);
     backdrop-filter: blur(10px);
     transition: 0.2s;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
 }
+
 
 .menu-icon img {
     width: 100%;
@@ -119,10 +121,12 @@ img {
 @media screen and (min-width: 10px) and (max-width: 767px) {
     .main-container {
         padding-top: 100px;
+        margin-left: 15%;
+        margin-right: 15%;
         gap: 1rem;
     }
 
-    .gr-2-col {
+    .gr-2-col, .gr-3-col {
         grid-column: span 4;
         align-self: center;
         place-self: center;
@@ -153,7 +157,7 @@ img {
     }
 
     .menu-list {
-        background-color: rgba(170, 160, 150, 0.3);
+        background-color: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(10px);
         border-radius: 2%;
         display: block;
@@ -161,24 +165,19 @@ img {
         top: 120px;
         left: -450px;
         width: 150px;
-        height: 300px;
+        height: 200px;
         transition: left 0.3s ease;
         padding-right: 40px;
         padding-top: 0px;
     }
 
-    .ul {
-        background-color: black;
-    }
 
     #menu-toggle {
         transform: scale(5);
         background-image: url("./hamburger-menu.png");
     }
 
-    #menu-toggle:checked ~ .menu-list {
-        left: 0;
-    }
+
 
     .menu-list a {
         display: block;
@@ -187,4 +186,8 @@ img {
         text-decoration: none;
     }
 
+
+    .software-photo {
+        display: none;
+    }
 }
