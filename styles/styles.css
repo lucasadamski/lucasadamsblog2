@@ -12,6 +12,7 @@
     backdrop-filter: blur(10px);
     background-color: rgba(135, 157, 152, 0.16);
     box-shadow: 1px 1px 5px;
+    width: 100%;
 }
 
 .menu-icon {
@@ -156,6 +157,7 @@ img {
     
     .menu-icon {
         display: block;
+        z-index: 999;
     }
  
     .logo {
@@ -164,6 +166,8 @@ img {
         background-color: white;
         width: 100%;
         text-align: center;
+        z-index: 99;
+        box-shadow: 1px 1px 5px;
     }
 
     .logo h1 {
@@ -187,6 +191,7 @@ img {
         transition: left 0.3s ease;
         padding-right: 40px;
         padding-top: 0px;
+        z-index: 999;
     }
 
 
