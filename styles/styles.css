@@ -34,12 +34,6 @@
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
 }
 
-img {
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
-    border-radius: 5%;
-}
-
-
 .menu-icon img {
     width: 100%;
     height: 100%;
@@ -65,7 +59,13 @@ p {
 .main-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-rows: minmax(0, 100px) 
+                        minmax(0, 150px) 
+                        minmax(0, 300px) 
+                        minmax(0, 300px) 
+                        minmax(0, 300px) 
+                        minmax(0, 300px);
+
     align-items: center;
 
     gap: 0;
@@ -85,8 +85,6 @@ p {
 .square {
     width: 100%;
     height: 100%;
-    border: 1px solid BLACK;
-    background-color: grey;
 }
 
 .gr-span4-col {
@@ -132,12 +130,14 @@ p {
 }
 
 .photo img {
-    cover
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
 }
 
-img {
-    height: 300px;
-}
 
 
 
@@ -153,11 +153,11 @@ p {
 
 
 .taper-line {
-  height: 1px;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 20px;
-  background: linear-gradient(
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    background: linear-gradient(
     to right,
     transparent 0%,
     #000 50%,
