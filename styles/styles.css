@@ -1,9 +1,20 @@
-@font-face {
-  font-family: "Broadway";
-  src: url("/fonts/broadway_cyr.ttf") format("truetype");
+h3, p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
+
+
+h1 {
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+}
+
 
 body {
     max-width: 900px;
@@ -83,18 +94,9 @@ body {
 }
 
 
-
-h1 {
-    font-family: "Broadway";
-    font-size: 65px;
-    letter-spacing: 2px;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
-}
-
-
 .logo {
     column-span: 4;
-    margin: 20px;
+    max-height: 200px;
 }
 
 
@@ -109,7 +111,6 @@ h1 {
 .menu-active {
     text-decoration: underline;
 }
-
 
 
 
