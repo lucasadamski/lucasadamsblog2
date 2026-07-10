@@ -51,74 +51,15 @@ h1 {
 
 
 
-p {
-    font-family: "Cambria";
-    text-align: justify;
-}
 
-.main-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(0, 100px) 
-                        minmax(0, 150px) 
-                        minmax(0, 300px) 
-                        minmax(0, 300px) 
-                        minmax(0, 300px) 
-                        minmax(0, 300px);
 
-    align-items: center;
-   
-
-    gap: 0;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.main-container > :first-child {
-    height: 100px;
-}
 
 .logo {
     column-span: 4;
     margin: 20px;
 }
 
-.square {
-    width: 100%;
-    height: 100%;
-     aspect-ratio: 1 / 1;
-}
 
-.gr-span4-col {
-    grid-column: span 4;
-}
-
-.gr-1-col {
-    grid-column: 1;
-}
-
-.gr-2-col {
-    grid-column: 2;
-}
-
-.gr-3-col {
-    grid-column: 3;
-}
-
-.gr-4-col {
-    grid-column: 4;
-}
-
-.gr-ctr {
-    place-self: center;
-}
-
-.gr-rgt {
-    justify-self: end;
-}
-.gr-lft {
-    justify-self: start;
-}
 
 .menu-item {
     font-family: "Cambria";
@@ -131,34 +72,56 @@ p {
     text-decoration: underline;
 }
 
-.photo img {
+
+
+
+
+/* --- GRID LAYOUT --- */
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* --- UNIVERSAL SQUARE BEHAVIOR --- */
+.square {
+    aspect-ratio: 1 / 1;      /* perfect square */
+    display: flex;            /* center content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* --- TEXT BLOCKS --- */
+.square.paragraph h3 {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.square.paragraph p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0.3rem 0;
+    display: block;
+}
+
+/* --- IMAGE BLOCKS --- */
+.square.photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
+    object-fit: cover;        /* fills the square nicely */
     display: block;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
 }
-
-
-
-
-h3 {
-    text-align: center;
-    margin-top: 20%;
-}
-
-p { 
-    margin: 0 3rem;
-}
-
-
 
 .taper-line {
     height: 1px;
     width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
     background: linear-gradient(
     to right,
     transparent 0%,
@@ -169,18 +132,7 @@ p {
 
 
 @media screen and (min-width: 10px) and (max-width: 767px) {
-    .main-container {
-        padding-top: 100px;
-        margin-left: 15%;
-        margin-right: 15%;
-        gap: 1rem;
-    }
 
-    .gr-2-col, .gr-3-col {
-        grid-column: span 4;
-        align-self: center;
-        place-self: center;
-    }
 
     .menu-item {
         display: none;
@@ -208,6 +160,8 @@ p {
     h1 {
         font-size: 22px;
     }
+
+  
 
     .menu-list {
         background-color: rgba(0, 0, 0, 0.6);
@@ -238,10 +192,5 @@ p {
         padding: 15px;
         color: white;
         text-decoration: none;
-    }
-
-
-    .software-photo {
-        display: none;
     }
 }
