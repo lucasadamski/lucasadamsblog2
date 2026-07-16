@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Lucas Adams Blog: contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo gr-span4-col gr-ctr">
+            <h1>lucas adams blog</h1>
+        </div>
+        <div class="gr-1-col gr-ctr menu-item"><a href="./index.html">home</a></div>
+        <div class="gr-2-col gr-ctr menu-item"><a href="./photos.html">photos</a></div>
+        <div class="gr-3-col gr-ctr menu-item"><a href="./software.html">software</a></div>
+        <div class="gr-4-col gr-ctr menu-item menu-active"><a href="./contact.html">contact</a></div>
+
+        <div class="menu-icon">
+            <img src="menu-icon.png" alt="" class="menu-icon-img">
+        </div>
+
+        <ul class="menu-list">
+            <li><a href="./index.html" class="menu-active">home</a></li>
+            <li><a href="./photos.html">photos</a></li>
+            <li><a href="./software.html">software</a></li>
+            <li><a href="./contact.html">contact</a></li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="square paragraph">
+            <h3>Contact</h3>
+            <div class="taper-line"> </div>
+            <p>For photoshoots, software please contact me via form.</p>
+        </div>
+        <div class="square paragraph">
+                    <form id="contact-form" action="https://formspree.io/f/mqkrvwky" method="POST">
+            <input type="email" name="email" text="E-mail" placeholder="Your E-mail" autocomplete="on" required>
+            <textarea rows="10" cols="60" name="message" placeholder="Please type in your message" autocomplete="off" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>copywright 2026 by Lucada Software Ltd</p>
+    </div>
+</body>
+<script src="scripts/scripts.js"></script>
+</html>
