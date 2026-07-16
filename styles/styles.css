@@ -39,6 +39,15 @@ body {
     grid-column: span 4;
 }
 
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    grid-column: span 2;
+}
+
 .gr-1-col {
     grid-column: 1;
 }
@@ -200,21 +209,23 @@ body {
 
 #contact-form input, #contact-form textarea {
     display: inline-block;
-    width: 90%;
     min-width: 200px;
     margin-bottom: 20px;
     padding: 16px 16px;
-    border-width: 3px;
-    border-color: black;
+    border-width: 2px;
+    border-color: antiquewhite;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+
 }
 
 #contact-form button {
-    width: 100px;
+    width: 50%;
     padding: 10px 18px;
     margin: auto;
     background-color: #000000;
     color: white;
     display: inline-block;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
 
