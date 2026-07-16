@@ -112,8 +112,12 @@ body {
     margin: 20px;
 }
 
-.menu-active {
+.menu-item:hover {
     text-decoration: underline;
+}
+
+.menu-active {
+    font-weight: 600;
 }
 
 .main-container {
