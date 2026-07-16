@@ -159,6 +159,18 @@ body {
     display: block;
 }
 
+.photo-top img {
+    object-position: top;
+}
+
+.photo-quarter-top img {
+    object-position: 50% 10%;
+}
+
+.photo-little-top img {
+    object-position: 50% 25%;
+}
+
 .taper-line {
     height: 1px;
     width: 70%;
