@@ -156,7 +156,7 @@ body {
 }
 
 .square.paragraph p {
-    font-size: 0.9rem;
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
     text-align: center;
     margin: 0.3rem 0;
     display: block;
