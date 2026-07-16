@@ -20,3 +20,8 @@ const menuLabel = document.querySelector('.menu-icon');
 menuLabel.addEventListener('click', () => {
     onClickMenuList();
 });
+
+function openInNewWindow(img) {
+    console.log('Open window called.');
+    window.open(img.src, '_blank');
+}
