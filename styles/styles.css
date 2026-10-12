@@ -163,22 +163,22 @@ body {
     padding: 1rem;
 }
 
-.square.photo img {
+.square.photo img, .square.photo a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.photo-top img {
+.photo-top img, .photo-top a img {
     object-position: top;
 }
 
-.photo-quarter-top img {
+.photo-quarter-top img, .photo-quarter-top a img {
     object-position: 50% 10%;
 }
 
-.photo-little-top img {
+.photo-little-top img, .photo-little-top a img  {
     object-position: 50% 25%;
 }
 
